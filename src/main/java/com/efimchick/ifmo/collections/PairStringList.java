@@ -3,7 +3,7 @@ package com.efimchick.ifmo.collections;
 import java.util.*;
 
 class PairStringList implements List<String>  {
-    private List<String> pairedList = new ArrayList<>();
+    private final List<String> pairedList = new ArrayList<>();
 
 
 
