@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 class SortedByAbsoluteValueIntegerSet implements Set<Integer> {
-    private Set<Integer> integerSet = new TreeSet<>(new IntegerComparator());
+    private final Set<Integer> integerSet = new TreeSet<>(new IntegerComparator());
 
 
     @Override
@@ -51,7 +51,7 @@ class SortedByAbsoluteValueIntegerSet implements Set<Integer> {
 
     @Override
     public boolean containsAll(Collection<?> c) {
-        return integerSet.contains(c);
+        return integerSet.containsAll(c);
     }
 
     @Override
